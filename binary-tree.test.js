@@ -24,59 +24,59 @@ beforeEach(function () {
   largeTree = new BinaryTree(root);
 });
 
-// describe("minDepth", function() {
-//   it("handles simple trees", function() {
-//     expect(smallTree.minDepth()).toBe(2);
-//   });
+describe("minDepth", function () {
+  it("handles simple trees", function () {
+    expect(smallTree.minDepth()).toBe(2);
+  });
 
-//   it("handles more complex trees", function() {
-//     expect(largeTree.minDepth()).toBe(2);
-//   });
+  it("handles more complex trees", function () {
+    expect(largeTree.minDepth()).toBe(2);
+  });
 
-//   it("handles empty trees", function() {
-//     expect(emptyTree.minDepth()).toBe(0);
-//   });
-// });
+  it("handles empty trees", function () {
+    expect(emptyTree.minDepth()).toBe(0);
+  });
+});
 
-// describe("maxDepth", function() {
-//   it("handles simple trees", function() {
-//     expect(smallTree.maxDepth()).toBe(2);
-//   });
+describe("maxDepth", function () {
+  it("handles simple trees", function () {
+    expect(smallTree.maxDepth()).toBe(2);
+  });
 
-//   it("handles more complex trees", function() {
-//     expect(largeTree.maxDepth()).toBe(4);
-//   });
+  it("handles more complex trees", function () {
+    expect(largeTree.maxDepth()).toBe(4);
+  });
 
-//   it("handles empty trees", function() {
-//     expect(emptyTree.maxDepth()).toBe(0);
-//   });
-// });
+  it("handles empty trees", function () {
+    expect(emptyTree.maxDepth()).toBe(0);
+  });
+});
 
-// describe("maxSum", function() {
-//   it("handles simple trees", function() {
-//     expect(smallTree.maxSum()).toBe(16);
-//   });
+describe("maxSum", function () {
+  it("handles simple trees", function () {
+    expect(smallTree.maxSum()).toBe(16);
+  });
 
-//   it("handles empty trees", function() {
-//     expect(emptyTree.maxSum()).toBe(0);
-//   });
+  it("handles empty trees", function () {
+    expect(emptyTree.maxSum()).toBe(0);
+  });
 
-//   it("handles more complex trees", function() {
-//     expect(largeTree.maxSum()).toBe(21);
-//   });
+  it("handles more complex trees", function () {
+    expect(largeTree.maxSum()).toBe(21);
+  });
 
-//   it("handles negative values", function() {
-//     let node100 = new BinaryTreeNode(100);
-//     let node8 = new BinaryTreeNode(8);
-//     let nodeNeg4 = new BinaryTreeNode(-4);
-//     let node2 = new BinaryTreeNode(2, nodeNeg4);
-//     let nodeNeg3 = new BinaryTreeNode(-3, node8, node100);
-//     let root = new BinaryTreeNode(10, node2, nodeNeg3);
-//     let tree = new BinaryTree(root);
+  it("handles negative values", function () {
+    let node100 = new BinaryTreeNode(100);
+    let node8 = new BinaryTreeNode(8);
+    let nodeNeg4 = new BinaryTreeNode(-4);
+    let node2 = new BinaryTreeNode(2, nodeNeg4);
+    let nodeNeg3 = new BinaryTreeNode(-3, node8, node100);
+    let root = new BinaryTreeNode(10, node2, nodeNeg3);
+    let tree = new BinaryTree(root);
 
-//     expect(tree.maxSum()).toBe(109);
-//   });
-// });
+    expect(tree.maxSum()).toBe(109);
+  });
+});
 
 // describe("nextLarger", function() {
 //   it("handles simple trees", function() {
